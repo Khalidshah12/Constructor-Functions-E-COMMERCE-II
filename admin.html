@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel Dashboard</title>
+    <style>
+        #container{
+            width: 40%;
+            margin: auto;
+        }
+        input{
+            width: 100%;
+            height: 35px;
+            margin-top: 10px;
+            font-size: 18px;
+            /* padding-left: 10px; */
+        }
+        input::placeholder{
+            font-size: 18px;
+        }
+        select{
+            width: 100%;
+            height: 35px;
+            margin-top: 10px;
+            font-size: 18px;
+            /* padding-left: 10px; */
+        }
+        button{
+            width: 100%;
+            height: 35px;
+            margin-top: 10px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: teal;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <form id="form">
+            <input type="text" id="name" placeholder="Product Name">
+            <input type="text" id="category" placeholder="Category">
+            <input type="text" id="image" placeholder="Image URL">
+            <input type="number" id="price" placeholder="Price">
+            <select id="gender" >
+                <option value="none">Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+            <select name="" id="sold">
+                <option value="False">False</option>
+            </select>
+        </form>
+    
+        <button id="add">Submit</button>
+    </div>
+    
+</body>
+</html>
+<script src="./admin.js"></script>
